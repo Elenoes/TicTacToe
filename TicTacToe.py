@@ -13,7 +13,7 @@ def main():
     print("| " + matrix[1][0] + " " + matrix[1][1] + " " + matrix[1][2] + " |")
     print("| " + matrix[2][0] + " " + matrix[2][1] + " " + matrix[2][2] + " |")
     print("---------")
-
+    
     provided_coordinates = []
     queue_turn = 'X'
     winner = False
@@ -67,12 +67,7 @@ def main():
             print("Draw")
             break
 
-
-
-
-
 def check_win(matrix):
-
 
     divided_cells = matrix
 
@@ -80,10 +75,7 @@ def check_win(matrix):
     counter = 0
     counterX = 0
     counterO = 0
-
-    #if winner non empty it's impossible case
-    winner = ""
-
+    winner = "" #if winner non empty it's impossible case
 
     for line in matrix:
         for x in line:
